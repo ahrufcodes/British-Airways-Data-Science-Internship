@@ -1,0 +1,45 @@
+# Sentiment Analysis on Reviews - README
+This is a Sentiment Analysis I perfomed For British Airways during my intership through Forage.
+
+I conducted sentiment analysis on a dataset of reviews that I obtained by scraping the website https://www.airlinequality.com/. The analysis utilized the VADER (Valence Aware Dictionary and sEntiment Reasoner) lexicon to generate positive, negative, neutral, and compound sentiment scores for each review. These scores offer valuable insights into the sentiment expressed in the reviews.
+
+## Getting Started
+
+To run this project, you'll need to have the following dependencies installed:
+
+- requests
+- BeautifulSoup
+- pandas
+- nltk
+
+You can install these dependencies using `pip`:
+
+```
+pip install requests beautifulsoup4 pandas nltk
+```
+
+In addition, you'll need to download the VADER lexicon used for sentiment analysis. You can do this by running the following code:
+
+```python
+import nltk
+nltk.download('vader_lexicon')
+```
+
+## Code Explanation
+
+1. The code begins by importing the necessary libraries: `requests`, `BeautifulSoup`, `pandas`, and `nltk.sentiment`.
+2. The dataset is loaded into a pandas DataFrame using `pd.read_csv()`.
+3. The VADER lexicon is downloaded using `nltk.download('vader_lexicon')`.
+4. Sentiment analysis is performed on each review using the SentimentIntensityAnalyzer from `nltk.sentiment`.
+5. The positive, negative, neutral, and compound sentiment scores are extracted from the sentiment analysis results and added as new columns in the DataFrame.
+6. The updated DataFrame is printed to show the sentiment scores for each review.
+7. Various statistics (mean, standard deviation, minimum, and maximum) of the sentiment scores are calculated and printed.
+8. Visualizations are created using matplotlib to represent the mean sentiment scores and the distribution of sentiment scores.
+
+## Results
+
+The results of the sentiment analysis are displayed through visualizations and statistics. The mean sentiment scores for different sentiment types (compound, neutral, negative, positive) are plotted in a bar chart. The distribution of sentiment scores is shown using a box plot.
+
+## Contributing
+
+Contributions to this project are welcome! If you have any suggestions, ideas, or improvements, please feel free to submit a pull request.
