@@ -1,0 +1,51 @@
+# Customer Booking ML Model
+
+## Introduction
+This repository contains the code for training and evaluating a machine learning model to predict customer bookings. The model utilizes a Random Forest algorithm and provides insights into the contribution of each variable to its predictive power.
+
+## Getting Started
+To get started with this project, follow the steps below:
+
+1. Clone the repository:
+2. Install the required libraries:
+3. 
+3. Prepare the dataset:
+- Ensure that the customer booking dataset is available in the `data` directory.
+- The dataset should be in CSV format and named `customer_booking.csv`.
+
+4. Run the code:
+- Open the `customer_booking_ml_model.py` file.
+- Modify the file paths and names if necessary to match your environment.
+- Execute the code to train and evaluate the model.
+
+## Code Overview
+The code in `customer_booking_ml_model.py` performs the following steps:
+
+1. Import the required libraries and modules.
+2. Read the customer booking dataset using pandas.
+3. Preprocess the data:
+- Convert categorical columns to one-hot encoding.
+- Map the 'flight_day' column to numerical values.
+- Split the dataset into input features (X) and the target variable (y).
+4. Split the dataset into training and testing sets using the train_test_split function.
+5. Train a Random Forest model on the training data.
+6. Evaluate the model on the testing data and generate a classification report.
+7. Calculate and print the feature importance and model parameters.
+8. Generate visualizations to gain insights from the data:
+- Histogram and boxplot for numerical variables.
+- Bar plot for categorical variables.
+- Pie chart for booking completion status.
+- Correlation heatmap.
+- Scatter plot and line plot for exploring relationships.
+
+## Results
+The model achieved a certain level of accuracy, as indicated by the classification report. The feature importance analysis provides insights into the variables contributing to the predictive power of the model. The visualizations offers a deeper understanding of the data and its relationships.
+
+
+## Conclusion
+The presented machine learning model provides a predictive solution for customer bookings. The code and visualizations offer valuable insights for decision-making and understanding the factors influencing bookings. 
+
+For any questions, observations or inquiries, please contact me at @ahrufdesign@gmail.com
+Thank You
+
+
